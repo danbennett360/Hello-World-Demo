@@ -1,9 +1,13 @@
 #include <iostream>
 
-//this is new code
-
-
 int main(int argc, char * argv[]) {
-   cout << "Hello World" << endl;
+
+   string msg = "Hello World";
+   if (argc> 1) {
+      if (!strcmp(argv[1] , "Pig") ){
+          msg = "ElloHay OrldWay!"
+      }
+   }
+   cout << msg << endl;
    return 0;
 }
