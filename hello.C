@@ -4,6 +4,8 @@
 A program to say hello to the world 
 */
 
+void PrintMessage (string msg);
+
 int main(int argc, char * argv[]) {
 
    string msg = "Hello World";
@@ -12,6 +14,12 @@ int main(int argc, char * argv[]) {
           msg = "ElloHay OrldWay!"
       }
    }
-   cout << msg << endl;
+
+   PrintMessage(msg);
+
    return 0;
+}
+
+void PrintMessage(string msg) {
+    cout << msg << endl;
 }
