@@ -17,6 +17,8 @@ int main(int argc, char * argv[]) {
 
    PrintMessage(msg);
 
+   cout << "Hello to you too" << endl;
+
    return 0;
 }
 
