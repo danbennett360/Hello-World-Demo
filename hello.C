@@ -1,5 +1,9 @@
 #include <iostream>
 
+/*
+A program to say hello to the world 
+*/
+
 int main(int argc, char * argv[]) {
 
    string msg = "Hello World";
