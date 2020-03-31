@@ -3,7 +3,7 @@
 /*
 A program to say hello to the world 
 
-By Dan and the class.
+By the CLass and Dan
 */
 
 void PrintMessage (string msg);
