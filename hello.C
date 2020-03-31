@@ -1,7 +1,8 @@
 #include <iostream>
 
 /*
-A program to say hello to the world 
+A program to say hello to the world
+
 
 By anyone who has written a c++ project.
 */
