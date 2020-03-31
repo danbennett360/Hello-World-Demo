@@ -2,6 +2,8 @@
 
 /*
 A program to say hello to the world 
+
+By Dan and the class.
 */
 
 void PrintMessage (string msg);
