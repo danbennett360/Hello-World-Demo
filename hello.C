@@ -3,8 +3,6 @@
 /*
 A program to say hello to the world
 
-
-By anyone who has written a c++ project.
 */
 
 void PrintMessage (string msg);
