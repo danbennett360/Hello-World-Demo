@@ -21,7 +21,6 @@ int main(int argc, char * argv[]) {
 
    cout << "Hello to you too" << endl;
 
-// for push
    return 0;
 }
 
