@@ -15,16 +15,23 @@ void PrintMessage (string msg);
 int main(int argc, char * argv[])  {
 
    string msg = "Hello World";
+   bool goodArg = true;
 
    if (argc> 1) {
+      goodArg = false;
       if (!strcmp(argv[1] , "Pig") ){
           msg = "ElloHay OrldWay!";
+	  goodArg = true;
       }
    }
-//
-   PrintMessage(msg);
 
-   cout << "Hello to you too" << endl;
+   if (not goodArg) {
+      cout << "Error: unknown language " << argv[1] << endl;
+   } else {
+      PrintMessage(msg);
+
+      cout << "Hello to you too" << endl;
+   }
 
    return 0;
 }

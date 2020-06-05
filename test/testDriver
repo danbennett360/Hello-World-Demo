@@ -9,7 +9,6 @@ for case in `ls test/*.cmdLine`; do
 
    hello `cat $case` | diff -q - test/${base}.out
    res=$(( ${PIPESTATUS[0]}+${PIPESTATUS[1]} ))
-   echo ${res}
    if [ ${res} -eq 0 ]; then
       echo 'Success'
    else 
