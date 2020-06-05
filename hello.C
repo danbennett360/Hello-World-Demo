@@ -25,13 +25,14 @@ int main(int argc, char * argv[])  {
       }
    }
 
+
    if (not goodArg) {
       cout << "Error: unknown language " << argv[1] << endl;
    } else {
       PrintMessage(msg);
-
       cout << "Hello to you too" << endl;
    }
+
 
    return 0;
 }
