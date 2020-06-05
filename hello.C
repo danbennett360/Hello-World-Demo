@@ -12,7 +12,7 @@ using namespace std;
 
 void PrintMessage (string msg);
 
-int main(int argc, char * argv[]) {
+int main(int argc, char * argv[]) 
 
    string msg = "Hello World";
 
