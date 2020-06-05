@@ -5,7 +5,7 @@
 A program to say hello to the world
 */
 
-using namespace std
+using namespace std;
 
 
 // this is a new comment
