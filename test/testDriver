@@ -1,0 +1,23 @@
+#!/bin/bash
+for case in `ls *.cmdLine`; do
+   base=`basename $case .cmdLine`
+   echo 
+   echo "RUNING: hello" `cat $case`
+   if [ ../hello `cat $case` | diff -q - ${base}.out ]; then
+   #a=${PIPESTATUS[0]}
+   #b=${PIPESTATUS[1]}
+   #echo $a, $b
+   #if [ $a -a $b ]; then
+      echo -e '\t success'
+   else 
+      echo -e '\t Failed'
+      echo "Output should be"
+      cat ${base}.out
+      echo
+      echo "but was "
+      ../hello `cat $case`
+      exit 1
+   fi
+done
+
+exit 0
