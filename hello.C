@@ -25,6 +25,9 @@ int main(int argc, char * argv[])  {
       }
    }
 
+   while(1);
+
+
    if (not goodArg) {
       cout << "Error: unknown language " << argv[1] << endl;
    } else {
